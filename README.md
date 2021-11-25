@@ -5,3 +5,7 @@ Vamos a usar un mismo proyecto para mostrar las diferecias entre los tres patron
 - GetX
 - Provider
 - BLoC
+
+Shopping Car demo for GetX
+
+<img src="f_shopping_car/shoppingCart.gif" width="300" />
