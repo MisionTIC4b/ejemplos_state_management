@@ -1,3 +1,4 @@
+import 'package:f_shopping_car/controllers/shopping_controller.dart';
 import 'package:f_shopping_car/ui/pages/shopping_cart.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -7,6 +8,7 @@ class ProductList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    ShoppingController shoppingController = Get.find();
     return Scaffold(
       appBar: AppBar(
         title: const Text('Product listing'),
@@ -14,7 +16,7 @@ class ProductList extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.shopping_bag),
             onPressed: () {
-              Get.to(const ShoppingCart());
+              Get.to(() => const ShoppingCart());
             },
           ),
         ],
@@ -24,21 +26,27 @@ class ProductList extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              IconButton(onPressed: () {}, icon: const Icon(Icons.arrow_back)),
+              IconButton(
+                  onPressed: () => shoppingController.lessMilk(),
+                  icon: const Icon(Icons.arrow_back)),
               const Text('Milk'),
               IconButton(
-                  onPressed: () {}, icon: const Icon(Icons.arrow_forward)),
-              const Text('0'),
+                  onPressed: () => shoppingController.moreMilk(),
+                  icon: const Icon(Icons.arrow_forward)),
+              Obx(() => Text('${shoppingController.milkAmount}')),
             ],
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              IconButton(onPressed: () {}, icon: const Icon(Icons.arrow_back)),
+              IconButton(
+                  onPressed: () => shoppingController.lessRice(),
+                  icon: const Icon(Icons.arrow_back)),
               const Text('Rice'),
               IconButton(
-                  onPressed: () {}, icon: const Icon(Icons.arrow_forward)),
-              const Text('0'),
+                  onPressed: () => shoppingController.moreRice(),
+                  icon: const Icon(Icons.arrow_forward)),
+              Obx(() => Text(shoppingController.riceAmount.toString())),
             ],
           )
         ],
