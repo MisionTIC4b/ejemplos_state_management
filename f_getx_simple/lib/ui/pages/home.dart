@@ -1,7 +1,8 @@
-import 'package:f_getx_simple/domain/models/controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
+
+import '../../domain/controllers/controller.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
