@@ -1,8 +1,9 @@
-import 'package:f_getx_simple/domain/models/controller.dart';
 import 'package:f_getx_simple/ui/pages/home.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:loggy/loggy.dart';
+
+import 'domain/controllers/controller.dart';
 
 // In this example we will not be using our regular project structure to help
 // with the understating of the state handler using GetX
