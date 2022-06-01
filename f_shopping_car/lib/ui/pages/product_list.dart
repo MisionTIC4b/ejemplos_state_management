@@ -1,7 +1,8 @@
-import 'package:f_shopping_car/controllers/shopping_controller.dart';
 import 'package:f_shopping_car/ui/pages/shopping_cart.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../controllers/shopping_controller.dart';
 
 class ProductList extends StatelessWidget {
   const ProductList({Key? key}) : super(key: key);

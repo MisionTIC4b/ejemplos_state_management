@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:loggy/loggy.dart';
 import 'ui/pages/home.dart';
-import 'ui/widgets/my_color.dart';
+import 'ui/providers/my_color.dart';
 
 // In this example we will not be using our regular project structure to help
 // with the understating of the state handler using Provider
