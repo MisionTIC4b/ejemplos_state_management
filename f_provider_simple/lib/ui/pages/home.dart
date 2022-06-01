@@ -1,4 +1,4 @@
-import 'package:f_provider_simple/domain/providers/my_color.dart';
+import 'package:f_provider_simple/ui/providers/my_color.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:loggy/loggy.dart';
 
-import 'domain/controllers/controller.dart';
+import 'ui/controllers/controller.dart';
 
 // In this example we will not be using our regular project structure to help
 // with the understating of the state handler using GetX
