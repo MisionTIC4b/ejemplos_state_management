@@ -1,4 +1,4 @@
-# Manejo de estado con GetX - Provider - BLoC
+# Manejo de estado con GetX - Provider
 
 Simple one page sample with GetX (f_getx_simple) and Provider (f_provider_simple)
 
