@@ -10,6 +10,7 @@ class MockColorController extends GetxService
     implements MyController {
   var _isRed = false.obs;
 
+  @override
   bool get isRed => _isRed.value;
 
   @override
