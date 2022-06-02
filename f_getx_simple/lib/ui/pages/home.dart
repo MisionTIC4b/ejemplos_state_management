@@ -18,6 +18,7 @@ class HomePage extends StatelessWidget {
           Expanded(
             child: Align(
               child: ElevatedButton(
+                  key: const Key('ColorButton'),
                   onPressed: () {
                     // here we create the event
                     myController.changeRed();
@@ -32,6 +33,7 @@ class HomePage extends StatelessWidget {
                 // controller
                 child: Obx(
                   () => Container(
+                      key: const Key('ColorContainer'),
                       color: myController.isRed ? Colors.red : Colors.blue,
                       child: const Center(
                           child: Text(
