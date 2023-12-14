@@ -49,7 +49,7 @@ class Bin2Dec extends StatelessWidget {
               child: Container(
                 padding: const EdgeInsets.all(8.0),
                 child: MaterialButton(
-                  color: Theme.of(context).colorScheme.secondaryVariant,
+                  color: Theme.of(context).colorScheme.secondary,
                   onPressed: () =>
                       Provider.of<ConvertionModel>(context, listen: false)
                           .reset(),

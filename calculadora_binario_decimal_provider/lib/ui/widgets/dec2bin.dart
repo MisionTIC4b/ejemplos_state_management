@@ -20,7 +20,7 @@ class Dec2Bin extends StatelessWidget {
                     textAlign: TextAlign.right,
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        color: Theme.of(context).accentColor,
+                        color: Theme.of(context).colorScheme.secondary,
                         fontSize: 35),
                   ),
                 );
@@ -36,7 +36,7 @@ class Dec2Bin extends StatelessWidget {
                     textAlign: TextAlign.right,
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        color: Theme.of(context).accentColor,
+                        color: Theme.of(context).colorScheme.secondary,
                         fontSize: 35),
                   ),
                 );
@@ -89,7 +89,7 @@ class Dec2Bin extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.symmetric(horizontal: 4.0),
                         child: MaterialButton(
-                          color: Theme.of(context).accentColor,
+                          color: Theme.of(context).colorScheme.secondary,
                           onPressed: () => Provider.of<ConvertionModel>(context,
                                   listen: false)
                               .reset(),

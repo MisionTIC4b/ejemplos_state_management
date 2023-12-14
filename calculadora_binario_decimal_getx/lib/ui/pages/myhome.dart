@@ -8,10 +8,14 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'MisiónTIC 2022 GetX',
+      title: 'GetX State Management Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('MisiónTIC 2022 - Flutter GetX'),
+          title: Text('GetX State Management Demo'),
         ),
         body: Center(
           child: Converter(),

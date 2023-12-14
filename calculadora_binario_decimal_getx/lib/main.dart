@@ -1,3 +1,4 @@
+import 'package:calculadorabinariodecimalgetx/domain/use_case/converter_use_case.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'ui/controllers/converter_controller.dart';
@@ -7,6 +8,7 @@ void main() {
   // here we use injection to instantiate our controller
   //Get.put(ConverterController());
   // with the lazy put the instance is only created once its needed
+  Get.lazyPut(() => ConverterUseCase());
   Get.lazyPut<ConverterController>(() => ConverterController());
   runApp(App());
 }

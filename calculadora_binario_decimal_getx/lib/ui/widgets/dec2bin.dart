@@ -200,7 +200,7 @@ class Dec2Bin extends StatelessWidget {
                     child: Container(
                       padding: const EdgeInsets.symmetric(horizontal: 4.0),
                       child: MaterialButton(
-                        color: Theme.of(context).colorScheme.secondaryVariant,
+                        color: Theme.of(context).colorScheme.secondary,
                         onPressed: () => controller.reset(),
                         child: Text(
                           "Reset",
